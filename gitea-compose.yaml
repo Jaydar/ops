@@ -1,0 +1,41 @@
+name: ops
+
+services:
+
+  gitea:
+    image: gitea/gitea:latest-rootless
+    container_name: gitea
+    restart: unless-stopped
+    volumes:
+      - ./gitea/data:/var/lib/gitea
+      - ./gitea/config:/etc/gitea
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - "3000:3000"
+      - "2222:22"
+    networks:
+      - net
+
+  gitea-runner:
+    image: gitea/act_runner:latest-dind
+    container_name: gitea-runner
+    restart: always
+    privileged: true
+
+    environment:
+      DOCKER_HOST: unix:///var/run/docker.sock
+      GITEA_INSTANCE_URL: http://gitea:3000
+      GITEA_RUNNER_REGISTRATION_TOKEN: 25oXqxJlF4HeeWsX8GPbpqgNYc7EJWZnrYqmKMOG
+      GITEA_RUNNER_NAME: runner
+      GITEA_RUNNER_LABELS: "ubuntu"
+    volumes:
+      - ./gitea/runner:/data
+
+    networks:
+      - net
+
+networks:
+  net:
+    driver: bridge
+    external: false

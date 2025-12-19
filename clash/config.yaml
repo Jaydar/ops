@@ -1,0 +1,1869 @@
+mixed-port: 7890
+allow-lan: true
+bind-address: "0.0.0.0"
+mode: rule
+log-level: info
+
+external-controller: 0.0.0.0:9090
+external-controller-cors:
+  allow-origins:
+    - "http://127.0.0.1:9080"
+    - "*"
+  allow-private-network: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  respect-rules: true
+  proxy-server-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 114.114.114.114
+  nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 114.114.114.114
+  fallback:
+  - 1.1.1.1
+  - 8.8.8.8
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+    - gfw
+    ipcidr:
+    - 240.0.0.0/4
+    domain:
+    - +.google.com
+    - +.facebook.com
+    - +.youtube.com
+proxies:
+- name: 剩余流量：131.8 GB
+  type: ss
+  server: m.stga.cn
+  port: 29945
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 距离下次重置剩余：6 天
+  type: ss
+  server: m.stga.cn
+  port: 29945
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 套餐到期：2025-12-23
+  type: ss
+  server: m.stga.cn
+  port: 29945
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🔗 防丢导航 → hk-beup.com
+  type: ss
+  server: m.stga.cn
+  port: 29945
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇭🇰 香港｜Hong Kong 01
+  type: ss
+  server: m.stga.cn
+  port: 29945
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇭🇰 香港｜Hong Kong 02
+  type: ss
+  server: m.stga.cn
+  port: 29946
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇭🇰 香港｜Hong Kong 03
+  type: ss
+  server: m.stga.cn
+  port: 29951
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇭🇰 香港｜Hong Kong 04
+  type: ss
+  server: m.stga.cn
+  port: 29947
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇭🇰 香港｜Hong Kong 05
+  type: ss
+  server: m.stga.cn
+  port: 29948
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇭🇰 香港｜Hong Kong 06
+  type: ss
+  server: m.stga.cn
+  port: 52094
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇭🇰 香港｜Hong Kong 07
+  type: ss
+  server: m.stga.cn
+  port: 51977
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇭🇰 香港｜Hong Kong 08
+  type: ss
+  server: m.stga.cn
+  port: 10159
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇭🇰 香港｜Hong Kong 09
+  type: ss
+  server: m.stga.cn
+  port: 22846
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇭🇰 香港｜Hong Kong 10
+  type: ss
+  server: m.stga.cn
+  port: 24316
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🎬 Emby 01 x 0.2
+  type: ss
+  server: m.stga.cn
+  port: 12036
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🎬 Emby 02 x 0.2
+  type: ss
+  server: m.stga.cn
+  port: 25454
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🎬 Emby 03 x 0.2
+  type: ss
+  server: m.stga.cn
+  port: 35631
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🎬 Emby 04 x 0.2
+  type: ss
+  server: m.stga.cn
+  port: 58387
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇯🇵 日本｜Japan 01
+  type: ss
+  server: m.stga.cn
+  port: 47398
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇯🇵 日本｜Japan 02
+  type: ss
+  server: m.stga.cn
+  port: 27367
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇯🇵 日本｜Japan 03
+  type: ss
+  server: m.stga.cn
+  port: 52414
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇯🇵 日本｜Japan 04
+  type: ss
+  server: m.stga.cn
+  port: 16636
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇯🇵 日本｜Sakura 05
+  type: ss
+  server: m.stga.cn
+  port: 51961
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇯🇵 日本｜Sakura 06
+  type: ss
+  server: m.stga.cn
+  port: 55305
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇯🇵 日本｜SoftBank 07
+  type: ss
+  server: m.stga.cn
+  port: 58736
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇯🇵 日本｜SoftBank 08
+  type: ss
+  server: m.stga.cn
+  port: 38635
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇨🇳 台湾｜Taiwan ISP 01
+  type: ss
+  server: m.stga.cn
+  port: 10038
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇨🇳 台湾｜Taiwan ISP 02
+  type: ss
+  server: m.stga.cn
+  port: 10039
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇨🇳 台湾｜Taiwan ISP 03
+  type: ss
+  server: m.stga.cn
+  port: 10040
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇨🇳 台湾｜Taiwan ISP 04
+  type: ss
+  server: m.stga.cn
+  port: 10041
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇨🇳 台湾｜Taiwan ISP 05
+  type: ss
+  server: m.stga.cn
+  port: 18048
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇨🇳 台湾｜Taiwan ISP 06
+  type: ss
+  server: m.stga.cn
+  port: 39763
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇨🇳 台湾｜Taiwan IDC 07
+  type: ss
+  server: m.stga.cn
+  port: 41205
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇨🇳 台湾｜Taiwan IDC 08
+  type: ss
+  server: m.stga.cn
+  port: 43420
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇺🇸 美国｜United States 01
+  type: ss
+  server: m.stga.cn
+  port: 32375
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇺🇸 美国｜United States 02
+  type: ss
+  server: m.stga.cn
+  port: 32376
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇺🇸 美国｜United States 03
+  type: ss
+  server: m.stga.cn
+  port: 32377
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇺🇸 美国｜United States 04
+  type: ss
+  server: m.stga.cn
+  port: 32378
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇺🇸 美国｜United States 05
+  type: ss
+  server: m.stga.cn
+  port: 27899
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇺🇸 美国｜United States 06
+  type: ss
+  server: m.stga.cn
+  port: 45381
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇺🇸 美国｜United States 07
+  type: ss
+  server: m.stga.cn
+  port: 37538
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇺🇸 美国｜United States 08
+  type: ss
+  server: m.stga.cn
+  port: 21839
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇺🇸 美国｜United States 09
+  type: ss
+  server: m.stga.cn
+  port: 32732
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇺🇸 美国｜United States 10
+  type: ss
+  server: m.stga.cn
+  port: 31883
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇺🇸 美国｜United States 11 x 0.5
+  type: ss
+  server: m.stga.cn
+  port: 28568
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇺🇸 美国｜United States 12 x 0.5
+  type: ss
+  server: m.stga.cn
+  port: 36310
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇸🇬 新加坡｜Singapore 01
+  type: ss
+  server: m.stga.cn
+  port: 27851
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇸🇬 新加坡｜Singapore 02
+  type: ss
+  server: m.stga.cn
+  port: 27852
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇸🇬 新加坡｜Singapore 03
+  type: ss
+  server: m.stga.cn
+  port: 27853
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇸🇬 新加坡｜Singapore 04
+  type: ss
+  server: m.stga.cn
+  port: 27854
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇸🇬 新加坡｜Singapore 05
+  type: ss
+  server: m.stga.cn
+  port: 50455
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇸🇬 新加坡｜Singapore 06
+  type: ss
+  server: m.stga.cn
+  port: 44830
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇸🇬 新加坡｜Singapore 07
+  type: ss
+  server: m.stga.cn
+  port: 37824
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇸🇬 新加坡｜Singapore 08
+  type: ss
+  server: m.stga.cn
+  port: 31286
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇲🇴 澳门｜Macau 01 x 5
+  type: ss
+  server: m.stga.cn
+  port: 23248
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇲🇴 澳门｜Macau 02 x 5
+  type: ss
+  server: m.stga.cn
+  port: 14461
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇲🇴 澳门｜Macau 03 x 5
+  type: ss
+  server: m.stga.cn
+  port: 10447
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇲🇴 澳门｜Macau 04 x 5
+  type: ss
+  server: m.stga.cn
+  port: 50281
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇲🇾 马来西亚｜Malaysia 01
+  type: ss
+  server: m.stga.cn
+  port: 32820
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇲🇾 马来西亚｜Malaysia 02
+  type: ss
+  server: m.stga.cn
+  port: 58895
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇲🇾 马来西亚｜Malaysia 03
+  type: ss
+  server: m.stga.cn
+  port: 55983
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇲🇾 马来西亚｜Malaysia 04
+  type: ss
+  server: m.stga.cn
+  port: 16430
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇰🇷 韩国｜Korea 01
+  type: ss
+  server: m.stga.cn
+  port: 20289
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇰🇷 韩国｜Korea 02
+  type: ss
+  server: m.stga.cn
+  port: 33815
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇰🇷 韩国｜Korea 03
+  type: ss
+  server: m.stga.cn
+  port: 27734
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇰🇷 韩国｜Korea 04
+  type: ss
+  server: m.stga.cn
+  port: 22227
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇹🇭 泰国｜Thailand 01
+  type: ss
+  server: m.stga.cn
+  port: 40856
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇹🇭 泰国｜Thailand 02
+  type: ss
+  server: m.stga.cn
+  port: 41479
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇹🇭 泰国｜Thailand 03
+  type: ss
+  server: m.stga.cn
+  port: 32790
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇹🇭 泰国｜Thailand 04
+  type: ss
+  server: m.stga.cn
+  port: 35624
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇻🇳 越南｜Vietnam 01
+  type: ss
+  server: m.stga.cn
+  port: 22268
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇻🇳 越南｜Vietnam 02
+  type: ss
+  server: m.stga.cn
+  port: 51542
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇻🇳 越南｜Vietnam 03
+  type: ss
+  server: m.stga.cn
+  port: 32388
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇻🇳 越南｜Vietnam 04
+  type: ss
+  server: m.stga.cn
+  port: 44560
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇵🇭 菲律宾｜Philippines 01
+  type: ss
+  server: m.stga.cn
+  port: 20038
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇵🇭 菲律宾｜Philippines 02
+  type: ss
+  server: m.stga.cn
+  port: 51048
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇵🇭 菲律宾｜Philippines 03
+  type: ss
+  server: m.stga.cn
+  port: 57598
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇵🇭 菲律宾｜Philippines 04
+  type: ss
+  server: m.stga.cn
+  port: 34436
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇦🇺 悉尼｜Sydney
+  type: ss
+  server: m.stga.cn
+  port: 28242
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇮🇳 印度｜India
+  type: ss
+  server: m.stga.cn
+  port: 27389
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇦🇪 迪拜｜Dubai
+  type: ss
+  server: m.stga.cn
+  port: 11749
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇦🇺 墨尔本｜Melbourne
+  type: ss
+  server: m.stga.cn
+  port: 10759
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇧🇩 孟加拉｜Bangladesh
+  type: ss
+  server: m.stga.cn
+  port: 62425
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇮🇩 印度尼西亚｜Indonesia
+  type: ss
+  server: m.stga.cn
+  port: 18752
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇮🇳 海得拉巴｜Hyderabad
+  type: ss
+  server: m.stga.cn
+  port: 10545
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇬🇧 英国｜United Kingdom
+  type: ss
+  server: m.stga.cn
+  port: 18483
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇫🇷 法国｜France
+  type: ss
+  server: m.stga.cn
+  port: 42630
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇩🇪 德国｜Germany
+  type: ss
+  server: m.stga.cn
+  port: 10031
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇮🇪 爱尔兰｜Ireland
+  type: ss
+  server: m.stga.cn
+  port: 17367
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇷🇺 俄罗斯｜Russia
+  type: ss
+  server: m.stga.cn
+  port: 40066
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇦🇷 阿根廷｜Argentina
+  type: ss
+  server: m.stga.cn
+  port: 41314
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇦🇪 阿布扎比｜Abu Dhabi
+  type: ss
+  server: m.stga.cn
+  port: 46044
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇰🇭 柬埔寨｜Cambodia
+  type: ss
+  server: m.stga.cn
+  port: 35077
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇰🇿 哈萨克斯坦｜Kazakhstan
+  type: ss
+  server: m.stga.cn
+  port: 35752
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇸🇦 沙特阿拉伯｜Saudi Arabia
+  type: ss
+  server: m.stga.cn
+  port: 22925
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇩🇰 丹麦｜Denmark
+  type: ss
+  server: m.stga.cn
+  port: 57791
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇬🇷 希腊｜Greece
+  type: ss
+  server: m.stga.cn
+  port: 24134
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇱🇹 立陶宛｜Lithuania
+  type: ss
+  server: m.stga.cn
+  port: 44073
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇦🇹 奥地利｜Austria
+  type: ss
+  server: m.stga.cn
+  port: 23831
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇭🇺 匈牙利｜Hungary
+  type: ss
+  server: m.stga.cn
+  port: 15019
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇦🇹 维也纳｜Vienna
+  type: ss
+  server: m.stga.cn
+  port: 42058
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇲🇰 马其顿｜Macedonia
+  type: ss
+  server: m.stga.cn
+  port: 51007
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇦🇿 阿塞拜疆｜Azerbaijan
+  type: ss
+  server: m.stga.cn
+  port: 16513
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇨🇦 加拿大｜Canada
+  type: ss
+  server: m.stga.cn
+  port: 49308
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇨🇦 多伦多｜Toronto
+  type: ss
+  server: m.stga.cn
+  port: 11531
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇲🇽 墨西哥｜Mexico
+  type: ss
+  server: m.stga.cn
+  port: 34860
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇲🇽 克雷塔罗｜Queretaro
+  type: ss
+  server: m.stga.cn
+  port: 44051
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇫🇷 马赛｜Marseille
+  type: ss
+  server: m.stga.cn
+  port: 31082
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇪🇬 埃及｜Egypt
+  type: ss
+  server: m.stga.cn
+  port: 64361
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇧🇷 巴西｜Brazil
+  type: ss
+  server: m.stga.cn
+  port: 39834
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇧🇷 维涅杜｜Vinhedo
+  type: ss
+  server: m.stga.cn
+  port: 48707
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇮🇸 冰岛｜Iceland
+  type: ss
+  server: m.stga.cn
+  port: 59289
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇨🇭 瑞士｜Switzerland
+  type: ss
+  server: m.stga.cn
+  port: 41826
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇸🇪 瑞典｜Sweden
+  type: ss
+  server: m.stga.cn
+  port: 52438
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇨🇿 捷克｜Czech
+  type: ss
+  server: m.stga.cn
+  port: 17371
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇹🇬 多哥｜Togo
+  type: ss
+  server: m.stga.cn
+  port: 10304
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇳🇴 挪威｜Norway
+  type: ss
+  server: m.stga.cn
+  port: 17374
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇳🇱 荷兰｜Netherlands
+  type: ss
+  server: m.stga.cn
+  port: 44116
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇿🇦 南非｜South Africa
+  type: ss
+  server: m.stga.cn
+  port: 12949
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇨🇱 智利｜Chile
+  type: ss
+  server: m.stga.cn
+  port: 16615
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇮🇹 意大利｜Italy
+  type: ss
+  server: m.stga.cn
+  port: 12238
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇹🇷 土耳其｜Turkey
+  type: ss
+  server: m.stga.cn
+  port: 51064
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇪🇸 西班牙｜Spain
+  type: ss
+  server: m.stga.cn
+  port: 11854
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇮🇱 以色列｜Israel
+  type: ss
+  server: m.stga.cn
+  port: 42154
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇳🇬 尼日利亚｜Nigeria 01
+  type: ss
+  server: m.stga.cn
+  port: 25488
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇨🇴 哥伦比亚｜Colombia
+  type: ss
+  server: m.stga.cn
+  port: 10990
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇨🇱 圣地亚哥｜Santiago
+  type: ss
+  server: m.stga.cn
+  port: 47343
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇨🇱 瓦尔帕莱索｜Valparaiso
+  type: ss
+  server: m.stga.cn
+  port: 17979
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+- name: 🇰🇬 吉尔吉斯斯坦｜Kyrgyzstan
+  type: ss
+  server: m.stga.cn
+  port: 10056
+  cipher: chacha20-ietf-poly1305
+  password: 1ab2cd41-122c-40d5-9e8b-48e31d2cd798
+  udp: true
+proxy-groups:
+- name: HK-BEUP® ISP
+  type: select
+  proxies:
+  - 自动选择
+  - 故障转移
+  - 剩余流量：131.8 GB
+  - 距离下次重置剩余：6 天
+  - 套餐到期：2025-12-23
+  - 🔗 防丢导航 → hk-beup.com
+  - 🇭🇰 香港｜Hong Kong 01
+  - 🇭🇰 香港｜Hong Kong 02
+  - 🇭🇰 香港｜Hong Kong 03
+  - 🇭🇰 香港｜Hong Kong 04
+  - 🇭🇰 香港｜Hong Kong 05
+  - 🇭🇰 香港｜Hong Kong 06
+  - 🇭🇰 香港｜Hong Kong 07
+  - 🇭🇰 香港｜Hong Kong 08
+  - 🇭🇰 香港｜Hong Kong 09
+  - 🇭🇰 香港｜Hong Kong 10
+  - 🎬 Emby 01 x 0.2
+  - 🎬 Emby 02 x 0.2
+  - 🎬 Emby 03 x 0.2
+  - 🎬 Emby 04 x 0.2
+  - 🇯🇵 日本｜Japan 01
+  - 🇯🇵 日本｜Japan 02
+  - 🇯🇵 日本｜Japan 03
+  - 🇯🇵 日本｜Japan 04
+  - 🇯🇵 日本｜Sakura 05
+  - 🇯🇵 日本｜Sakura 06
+  - 🇯🇵 日本｜SoftBank 07
+  - 🇯🇵 日本｜SoftBank 08
+  - 🇨🇳 台湾｜Taiwan ISP 01
+  - 🇨🇳 台湾｜Taiwan ISP 02
+  - 🇨🇳 台湾｜Taiwan ISP 03
+  - 🇨🇳 台湾｜Taiwan ISP 04
+  - 🇨🇳 台湾｜Taiwan ISP 05
+  - 🇨🇳 台湾｜Taiwan ISP 06
+  - 🇨🇳 台湾｜Taiwan IDC 07
+  - 🇨🇳 台湾｜Taiwan IDC 08
+  - 🇺🇸 美国｜United States 01
+  - 🇺🇸 美国｜United States 02
+  - 🇺🇸 美国｜United States 03
+  - 🇺🇸 美国｜United States 04
+  - 🇺🇸 美国｜United States 05
+  - 🇺🇸 美国｜United States 06
+  - 🇺🇸 美国｜United States 07
+  - 🇺🇸 美国｜United States 08
+  - 🇺🇸 美国｜United States 09
+  - 🇺🇸 美国｜United States 10
+  - 🇺🇸 美国｜United States 11 x 0.5
+  - 🇺🇸 美国｜United States 12 x 0.5
+  - 🇸🇬 新加坡｜Singapore 01
+  - 🇸🇬 新加坡｜Singapore 02
+  - 🇸🇬 新加坡｜Singapore 03
+  - 🇸🇬 新加坡｜Singapore 04
+  - 🇸🇬 新加坡｜Singapore 05
+  - 🇸🇬 新加坡｜Singapore 06
+  - 🇸🇬 新加坡｜Singapore 07
+  - 🇸🇬 新加坡｜Singapore 08
+  - 🇲🇴 澳门｜Macau 01 x 5
+  - 🇲🇴 澳门｜Macau 02 x 5
+  - 🇲🇴 澳门｜Macau 03 x 5
+  - 🇲🇴 澳门｜Macau 04 x 5
+  - 🇲🇾 马来西亚｜Malaysia 01
+  - 🇲🇾 马来西亚｜Malaysia 02
+  - 🇲🇾 马来西亚｜Malaysia 03
+  - 🇲🇾 马来西亚｜Malaysia 04
+  - 🇰🇷 韩国｜Korea 01
+  - 🇰🇷 韩国｜Korea 02
+  - 🇰🇷 韩国｜Korea 03
+  - 🇰🇷 韩国｜Korea 04
+  - 🇹🇭 泰国｜Thailand 01
+  - 🇹🇭 泰国｜Thailand 02
+  - 🇹🇭 泰国｜Thailand 03
+  - 🇹🇭 泰国｜Thailand 04
+  - 🇻🇳 越南｜Vietnam 01
+  - 🇻🇳 越南｜Vietnam 02
+  - 🇻🇳 越南｜Vietnam 03
+  - 🇻🇳 越南｜Vietnam 04
+  - 🇵🇭 菲律宾｜Philippines 01
+  - 🇵🇭 菲律宾｜Philippines 02
+  - 🇵🇭 菲律宾｜Philippines 03
+  - 🇵🇭 菲律宾｜Philippines 04
+  - 🇦🇺 悉尼｜Sydney
+  - 🇮🇳 印度｜India
+  - 🇦🇪 迪拜｜Dubai
+  - 🇦🇺 墨尔本｜Melbourne
+  - 🇧🇩 孟加拉｜Bangladesh
+  - 🇮🇩 印度尼西亚｜Indonesia
+  - 🇮🇳 海得拉巴｜Hyderabad
+  - 🇬🇧 英国｜United Kingdom
+  - 🇫🇷 法国｜France
+  - 🇩🇪 德国｜Germany
+  - 🇮🇪 爱尔兰｜Ireland
+  - 🇷🇺 俄罗斯｜Russia
+  - 🇦🇷 阿根廷｜Argentina
+  - 🇦🇪 阿布扎比｜Abu Dhabi
+  - 🇰🇭 柬埔寨｜Cambodia
+  - 🇰🇿 哈萨克斯坦｜Kazakhstan
+  - 🇸🇦 沙特阿拉伯｜Saudi Arabia
+  - 🇩🇰 丹麦｜Denmark
+  - 🇬🇷 希腊｜Greece
+  - 🇱🇹 立陶宛｜Lithuania
+  - 🇦🇹 奥地利｜Austria
+  - 🇭🇺 匈牙利｜Hungary
+  - 🇦🇹 维也纳｜Vienna
+  - 🇲🇰 马其顿｜Macedonia
+  - 🇦🇿 阿塞拜疆｜Azerbaijan
+  - 🇨🇦 加拿大｜Canada
+  - 🇨🇦 多伦多｜Toronto
+  - 🇲🇽 墨西哥｜Mexico
+  - 🇲🇽 克雷塔罗｜Queretaro
+  - 🇫🇷 马赛｜Marseille
+  - 🇪🇬 埃及｜Egypt
+  - 🇧🇷 巴西｜Brazil
+  - 🇧🇷 维涅杜｜Vinhedo
+  - 🇮🇸 冰岛｜Iceland
+  - 🇨🇭 瑞士｜Switzerland
+  - 🇸🇪 瑞典｜Sweden
+  - 🇨🇿 捷克｜Czech
+  - 🇹🇬 多哥｜Togo
+  - 🇳🇴 挪威｜Norway
+  - 🇳🇱 荷兰｜Netherlands
+  - 🇿🇦 南非｜South Africa
+  - 🇨🇱 智利｜Chile
+  - 🇮🇹 意大利｜Italy
+  - 🇹🇷 土耳其｜Turkey
+  - 🇪🇸 西班牙｜Spain
+  - 🇮🇱 以色列｜Israel
+  - 🇳🇬 尼日利亚｜Nigeria 01
+  - 🇨🇴 哥伦比亚｜Colombia
+  - 🇨🇱 圣地亚哥｜Santiago
+  - 🇨🇱 瓦尔帕莱索｜Valparaiso
+  - 🇰🇬 吉尔吉斯斯坦｜Kyrgyzstan
+- name: 自动选择
+  type: url-test
+  proxies:
+  - 剩余流量：131.8 GB
+  - 距离下次重置剩余：6 天
+  - 套餐到期：2025-12-23
+  - 🔗 防丢导航 → hk-beup.com
+  - 🇭🇰 香港｜Hong Kong 01
+  - 🇭🇰 香港｜Hong Kong 02
+  - 🇭🇰 香港｜Hong Kong 03
+  - 🇭🇰 香港｜Hong Kong 04
+  - 🇭🇰 香港｜Hong Kong 05
+  - 🇭🇰 香港｜Hong Kong 06
+  - 🇭🇰 香港｜Hong Kong 07
+  - 🇭🇰 香港｜Hong Kong 08
+  - 🇭🇰 香港｜Hong Kong 09
+  - 🇭🇰 香港｜Hong Kong 10
+  - 🎬 Emby 01 x 0.2
+  - 🎬 Emby 02 x 0.2
+  - 🎬 Emby 03 x 0.2
+  - 🎬 Emby 04 x 0.2
+  - 🇯🇵 日本｜Japan 01
+  - 🇯🇵 日本｜Japan 02
+  - 🇯🇵 日本｜Japan 03
+  - 🇯🇵 日本｜Japan 04
+  - 🇯🇵 日本｜Sakura 05
+  - 🇯🇵 日本｜Sakura 06
+  - 🇯🇵 日本｜SoftBank 07
+  - 🇯🇵 日本｜SoftBank 08
+  - 🇨🇳 台湾｜Taiwan ISP 01
+  - 🇨🇳 台湾｜Taiwan ISP 02
+  - 🇨🇳 台湾｜Taiwan ISP 03
+  - 🇨🇳 台湾｜Taiwan ISP 04
+  - 🇨🇳 台湾｜Taiwan ISP 05
+  - 🇨🇳 台湾｜Taiwan ISP 06
+  - 🇨🇳 台湾｜Taiwan IDC 07
+  - 🇨🇳 台湾｜Taiwan IDC 08
+  - 🇺🇸 美国｜United States 01
+  - 🇺🇸 美国｜United States 02
+  - 🇺🇸 美国｜United States 03
+  - 🇺🇸 美国｜United States 04
+  - 🇺🇸 美国｜United States 05
+  - 🇺🇸 美国｜United States 06
+  - 🇺🇸 美国｜United States 07
+  - 🇺🇸 美国｜United States 08
+  - 🇺🇸 美国｜United States 09
+  - 🇺🇸 美国｜United States 10
+  - 🇺🇸 美国｜United States 11 x 0.5
+  - 🇺🇸 美国｜United States 12 x 0.5
+  - 🇸🇬 新加坡｜Singapore 01
+  - 🇸🇬 新加坡｜Singapore 02
+  - 🇸🇬 新加坡｜Singapore 03
+  - 🇸🇬 新加坡｜Singapore 04
+  - 🇸🇬 新加坡｜Singapore 05
+  - 🇸🇬 新加坡｜Singapore 06
+  - 🇸🇬 新加坡｜Singapore 07
+  - 🇸🇬 新加坡｜Singapore 08
+  - 🇲🇴 澳门｜Macau 01 x 5
+  - 🇲🇴 澳门｜Macau 02 x 5
+  - 🇲🇴 澳门｜Macau 03 x 5
+  - 🇲🇴 澳门｜Macau 04 x 5
+  - 🇲🇾 马来西亚｜Malaysia 01
+  - 🇲🇾 马来西亚｜Malaysia 02
+  - 🇲🇾 马来西亚｜Malaysia 03
+  - 🇲🇾 马来西亚｜Malaysia 04
+  - 🇰🇷 韩国｜Korea 01
+  - 🇰🇷 韩国｜Korea 02
+  - 🇰🇷 韩国｜Korea 03
+  - 🇰🇷 韩国｜Korea 04
+  - 🇹🇭 泰国｜Thailand 01
+  - 🇹🇭 泰国｜Thailand 02
+  - 🇹🇭 泰国｜Thailand 03
+  - 🇹🇭 泰国｜Thailand 04
+  - 🇻🇳 越南｜Vietnam 01
+  - 🇻🇳 越南｜Vietnam 02
+  - 🇻🇳 越南｜Vietnam 03
+  - 🇻🇳 越南｜Vietnam 04
+  - 🇵🇭 菲律宾｜Philippines 01
+  - 🇵🇭 菲律宾｜Philippines 02
+  - 🇵🇭 菲律宾｜Philippines 03
+  - 🇵🇭 菲律宾｜Philippines 04
+  - 🇦🇺 悉尼｜Sydney
+  - 🇮🇳 印度｜India
+  - 🇦🇪 迪拜｜Dubai
+  - 🇦🇺 墨尔本｜Melbourne
+  - 🇧🇩 孟加拉｜Bangladesh
+  - 🇮🇩 印度尼西亚｜Indonesia
+  - 🇮🇳 海得拉巴｜Hyderabad
+  - 🇬🇧 英国｜United Kingdom
+  - 🇫🇷 法国｜France
+  - 🇩🇪 德国｜Germany
+  - 🇮🇪 爱尔兰｜Ireland
+  - 🇷🇺 俄罗斯｜Russia
+  - 🇦🇷 阿根廷｜Argentina
+  - 🇦🇪 阿布扎比｜Abu Dhabi
+  - 🇰🇭 柬埔寨｜Cambodia
+  - 🇰🇿 哈萨克斯坦｜Kazakhstan
+  - 🇸🇦 沙特阿拉伯｜Saudi Arabia
+  - 🇩🇰 丹麦｜Denmark
+  - 🇬🇷 希腊｜Greece
+  - 🇱🇹 立陶宛｜Lithuania
+  - 🇦🇹 奥地利｜Austria
+  - 🇭🇺 匈牙利｜Hungary
+  - 🇦🇹 维也纳｜Vienna
+  - 🇲🇰 马其顿｜Macedonia
+  - 🇦🇿 阿塞拜疆｜Azerbaijan
+  - 🇨🇦 加拿大｜Canada
+  - 🇨🇦 多伦多｜Toronto
+  - 🇲🇽 墨西哥｜Mexico
+  - 🇲🇽 克雷塔罗｜Queretaro
+  - 🇫🇷 马赛｜Marseille
+  - 🇪🇬 埃及｜Egypt
+  - 🇧🇷 巴西｜Brazil
+  - 🇧🇷 维涅杜｜Vinhedo
+  - 🇮🇸 冰岛｜Iceland
+  - 🇨🇭 瑞士｜Switzerland
+  - 🇸🇪 瑞典｜Sweden
+  - 🇨🇿 捷克｜Czech
+  - 🇹🇬 多哥｜Togo
+  - 🇳🇴 挪威｜Norway
+  - 🇳🇱 荷兰｜Netherlands
+  - 🇿🇦 南非｜South Africa
+  - 🇨🇱 智利｜Chile
+  - 🇮🇹 意大利｜Italy
+  - 🇹🇷 土耳其｜Turkey
+  - 🇪🇸 西班牙｜Spain
+  - 🇮🇱 以色列｜Israel
+  - 🇳🇬 尼日利亚｜Nigeria 01
+  - 🇨🇴 哥伦比亚｜Colombia
+  - 🇨🇱 圣地亚哥｜Santiago
+  - 🇨🇱 瓦尔帕莱索｜Valparaiso
+  - 🇰🇬 吉尔吉斯斯坦｜Kyrgyzstan
+  url: http://www.gstatic.com/generate_204
+  interval: 86400
+- name: 故障转移
+  type: fallback
+  proxies:
+  - 剩余流量：131.8 GB
+  - 距离下次重置剩余：6 天
+  - 套餐到期：2025-12-23
+  - 🔗 防丢导航 → hk-beup.com
+  - 🇭🇰 香港｜Hong Kong 01
+  - 🇭🇰 香港｜Hong Kong 02
+  - 🇭🇰 香港｜Hong Kong 03
+  - 🇭🇰 香港｜Hong Kong 04
+  - 🇭🇰 香港｜Hong Kong 05
+  - 🇭🇰 香港｜Hong Kong 06
+  - 🇭🇰 香港｜Hong Kong 07
+  - 🇭🇰 香港｜Hong Kong 08
+  - 🇭🇰 香港｜Hong Kong 09
+  - 🇭🇰 香港｜Hong Kong 10
+  - 🎬 Emby 01 x 0.2
+  - 🎬 Emby 02 x 0.2
+  - 🎬 Emby 03 x 0.2
+  - 🎬 Emby 04 x 0.2
+  - 🇯🇵 日本｜Japan 01
+  - 🇯🇵 日本｜Japan 02
+  - 🇯🇵 日本｜Japan 03
+  - 🇯🇵 日本｜Japan 04
+  - 🇯🇵 日本｜Sakura 05
+  - 🇯🇵 日本｜Sakura 06
+  - 🇯🇵 日本｜SoftBank 07
+  - 🇯🇵 日本｜SoftBank 08
+  - 🇨🇳 台湾｜Taiwan ISP 01
+  - 🇨🇳 台湾｜Taiwan ISP 02
+  - 🇨🇳 台湾｜Taiwan ISP 03
+  - 🇨🇳 台湾｜Taiwan ISP 04
+  - 🇨🇳 台湾｜Taiwan ISP 05
+  - 🇨🇳 台湾｜Taiwan ISP 06
+  - 🇨🇳 台湾｜Taiwan IDC 07
+  - 🇨🇳 台湾｜Taiwan IDC 08
+  - 🇺🇸 美国｜United States 01
+  - 🇺🇸 美国｜United States 02
+  - 🇺🇸 美国｜United States 03
+  - 🇺🇸 美国｜United States 04
+  - 🇺🇸 美国｜United States 05
+  - 🇺🇸 美国｜United States 06
+  - 🇺🇸 美国｜United States 07
+  - 🇺🇸 美国｜United States 08
+  - 🇺🇸 美国｜United States 09
+  - 🇺🇸 美国｜United States 10
+  - 🇺🇸 美国｜United States 11 x 0.5
+  - 🇺🇸 美国｜United States 12 x 0.5
+  - 🇸🇬 新加坡｜Singapore 01
+  - 🇸🇬 新加坡｜Singapore 02
+  - 🇸🇬 新加坡｜Singapore 03
+  - 🇸🇬 新加坡｜Singapore 04
+  - 🇸🇬 新加坡｜Singapore 05
+  - 🇸🇬 新加坡｜Singapore 06
+  - 🇸🇬 新加坡｜Singapore 07
+  - 🇸🇬 新加坡｜Singapore 08
+  - 🇲🇴 澳门｜Macau 01 x 5
+  - 🇲🇴 澳门｜Macau 02 x 5
+  - 🇲🇴 澳门｜Macau 03 x 5
+  - 🇲🇴 澳门｜Macau 04 x 5
+  - 🇲🇾 马来西亚｜Malaysia 01
+  - 🇲🇾 马来西亚｜Malaysia 02
+  - 🇲🇾 马来西亚｜Malaysia 03
+  - 🇲🇾 马来西亚｜Malaysia 04
+  - 🇰🇷 韩国｜Korea 01
+  - 🇰🇷 韩国｜Korea 02
+  - 🇰🇷 韩国｜Korea 03
+  - 🇰🇷 韩国｜Korea 04
+  - 🇹🇭 泰国｜Thailand 01
+  - 🇹🇭 泰国｜Thailand 02
+  - 🇹🇭 泰国｜Thailand 03
+  - 🇹🇭 泰国｜Thailand 04
+  - 🇻🇳 越南｜Vietnam 01
+  - 🇻🇳 越南｜Vietnam 02
+  - 🇻🇳 越南｜Vietnam 03
+  - 🇻🇳 越南｜Vietnam 04
+  - 🇵🇭 菲律宾｜Philippines 01
+  - 🇵🇭 菲律宾｜Philippines 02
+  - 🇵🇭 菲律宾｜Philippines 03
+  - 🇵🇭 菲律宾｜Philippines 04
+  - 🇦🇺 悉尼｜Sydney
+  - 🇮🇳 印度｜India
+  - 🇦🇪 迪拜｜Dubai
+  - 🇦🇺 墨尔本｜Melbourne
+  - 🇧🇩 孟加拉｜Bangladesh
+  - 🇮🇩 印度尼西亚｜Indonesia
+  - 🇮🇳 海得拉巴｜Hyderabad
+  - 🇬🇧 英国｜United Kingdom
+  - 🇫🇷 法国｜France
+  - 🇩🇪 德国｜Germany
+  - 🇮🇪 爱尔兰｜Ireland
+  - 🇷🇺 俄罗斯｜Russia
+  - 🇦🇷 阿根廷｜Argentina
+  - 🇦🇪 阿布扎比｜Abu Dhabi
+  - 🇰🇭 柬埔寨｜Cambodia
+  - 🇰🇿 哈萨克斯坦｜Kazakhstan
+  - 🇸🇦 沙特阿拉伯｜Saudi Arabia
+  - 🇩🇰 丹麦｜Denmark
+  - 🇬🇷 希腊｜Greece
+  - 🇱🇹 立陶宛｜Lithuania
+  - 🇦🇹 奥地利｜Austria
+  - 🇭🇺 匈牙利｜Hungary
+  - 🇦🇹 维也纳｜Vienna
+  - 🇲🇰 马其顿｜Macedonia
+  - 🇦🇿 阿塞拜疆｜Azerbaijan
+  - 🇨🇦 加拿大｜Canada
+  - 🇨🇦 多伦多｜Toronto
+  - 🇲🇽 墨西哥｜Mexico
+  - 🇲🇽 克雷塔罗｜Queretaro
+  - 🇫🇷 马赛｜Marseille
+  - 🇪🇬 埃及｜Egypt
+  - 🇧🇷 巴西｜Brazil
+  - 🇧🇷 维涅杜｜Vinhedo
+  - 🇮🇸 冰岛｜Iceland
+  - 🇨🇭 瑞士｜Switzerland
+  - 🇸🇪 瑞典｜Sweden
+  - 🇨🇿 捷克｜Czech
+  - 🇹🇬 多哥｜Togo
+  - 🇳🇴 挪威｜Norway
+  - 🇳🇱 荷兰｜Netherlands
+  - 🇿🇦 南非｜South Africa
+  - 🇨🇱 智利｜Chile
+  - 🇮🇹 意大利｜Italy
+  - 🇹🇷 土耳其｜Turkey
+  - 🇪🇸 西班牙｜Spain
+  - 🇮🇱 以色列｜Israel
+  - 🇳🇬 尼日利亚｜Nigeria 01
+  - 🇨🇴 哥伦比亚｜Colombia
+  - 🇨🇱 圣地亚哥｜Santiago
+  - 🇨🇱 瓦尔帕莱索｜Valparaiso
+  - 🇰🇬 吉尔吉斯斯坦｜Kyrgyzstan
+  url: http://www.gstatic.com/generate_204
+  interval: 7200
+rules:
+- IP-CIDR,1.1.1.1/32,HK-BEUP® ISP,no-resolve
+- IP-CIDR,8.8.8.8/32,HK-BEUP® ISP,no-resolve
+- DOMAIN-SUFFIX,services.googleapis.cn,HK-BEUP® ISP
+- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,HK-BEUP® ISP
+- DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
+- DOMAIN,safebrowsing.googleapis.com,DIRECT
+- DOMAIN,developer.apple.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,digicert.com,HK-BEUP® ISP
+- DOMAIN,ocsp.apple.com,HK-BEUP® ISP
+- DOMAIN,ocsp.comodoca.com,HK-BEUP® ISP
+- DOMAIN,ocsp.usertrust.com,HK-BEUP® ISP
+- DOMAIN,ocsp.sectigo.com,HK-BEUP® ISP
+- DOMAIN,ocsp.verisign.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,apple-dns.net,HK-BEUP® ISP
+- DOMAIN,testflight.apple.com,HK-BEUP® ISP
+- DOMAIN,sandbox.itunes.apple.com,HK-BEUP® ISP
+- DOMAIN,itunes.apple.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,apps.apple.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,blobstore.apple.com,HK-BEUP® ISP
+- DOMAIN,cvws.icloud-content.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,mzstatic.com,DIRECT
+- DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+- DOMAIN-SUFFIX,icloud.com,DIRECT
+- DOMAIN-SUFFIX,icloud-content.com,DIRECT
+- DOMAIN-SUFFIX,me.com,DIRECT
+- DOMAIN-SUFFIX,aaplimg.com,DIRECT
+- DOMAIN-SUFFIX,cdn20.com,DIRECT
+- DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+- DOMAIN-SUFFIX,akadns.net,DIRECT
+- DOMAIN-SUFFIX,akamaiedge.net,DIRECT
+- DOMAIN-SUFFIX,edgekey.net,DIRECT
+- DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT
+- DOMAIN-SUFFIX,mwcname.com,DIRECT
+- DOMAIN-SUFFIX,apple.com,DIRECT
+- DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+- DOMAIN-SUFFIX,apple-mapkit.com,DIRECT
+- DOMAIN,cn.bing.com,DIRECT
+- DOMAIN-SUFFIX,126.com,DIRECT
+- DOMAIN-SUFFIX,126.net,DIRECT
+- DOMAIN-SUFFIX,127.net,DIRECT
+- DOMAIN-SUFFIX,163.com,DIRECT
+- DOMAIN-SUFFIX,360buyimg.com,DIRECT
+- DOMAIN-SUFFIX,36kr.com,DIRECT
+- DOMAIN-SUFFIX,acfun.tv,DIRECT
+- DOMAIN-SUFFIX,air-matters.com,DIRECT
+- DOMAIN-SUFFIX,aixifan.com,DIRECT
+- DOMAIN-KEYWORD,alicdn,DIRECT
+- DOMAIN-KEYWORD,alipay,DIRECT
+- DOMAIN-KEYWORD,taobao,DIRECT
+- DOMAIN-SUFFIX,amap.com,DIRECT
+- DOMAIN-SUFFIX,autonavi.com,DIRECT
+- DOMAIN-KEYWORD,baidu,DIRECT
+- DOMAIN-SUFFIX,bdimg.com,DIRECT
+- DOMAIN-SUFFIX,bdstatic.com,DIRECT
+- DOMAIN-SUFFIX,bilibili.com,DIRECT
+- DOMAIN-SUFFIX,bilivideo.com,DIRECT
+- DOMAIN-SUFFIX,caiyunapp.com,DIRECT
+- DOMAIN-SUFFIX,clouddn.com,DIRECT
+- DOMAIN-SUFFIX,cnbeta.com,DIRECT
+- DOMAIN-SUFFIX,cnbetacdn.com,DIRECT
+- DOMAIN-SUFFIX,cootekservice.com,DIRECT
+- DOMAIN-SUFFIX,csdn.net,DIRECT
+- DOMAIN-SUFFIX,ctrip.com,DIRECT
+- DOMAIN-SUFFIX,dgtle.com,DIRECT
+- DOMAIN-SUFFIX,dianping.com,DIRECT
+- DOMAIN-SUFFIX,douban.com,DIRECT
+- DOMAIN-SUFFIX,doubanio.com,DIRECT
+- DOMAIN-SUFFIX,duokan.com,DIRECT
+- DOMAIN-SUFFIX,easou.com,DIRECT
+- DOMAIN-SUFFIX,ele.me,DIRECT
+- DOMAIN-SUFFIX,feng.com,DIRECT
+- DOMAIN-SUFFIX,fir.im,DIRECT
+- DOMAIN-SUFFIX,frdic.com,DIRECT
+- DOMAIN-SUFFIX,g-cores.com,DIRECT
+- DOMAIN-SUFFIX,godic.net,DIRECT
+- DOMAIN-SUFFIX,gtimg.com,DIRECT
+- DOMAIN,cdn.hockeyapp.net,DIRECT
+- DOMAIN-SUFFIX,hongxiu.com,DIRECT
+- DOMAIN-SUFFIX,hxcdn.net,DIRECT
+- DOMAIN-SUFFIX,iciba.com,DIRECT
+- DOMAIN-SUFFIX,ifeng.com,DIRECT
+- DOMAIN-SUFFIX,ifengimg.com,DIRECT
+- DOMAIN-SUFFIX,ipip.net,DIRECT
+- DOMAIN-SUFFIX,iqiyi.com,DIRECT
+- DOMAIN-SUFFIX,jd.com,DIRECT
+- DOMAIN-SUFFIX,jianshu.com,DIRECT
+- DOMAIN-SUFFIX,knewone.com,DIRECT
+- DOMAIN-SUFFIX,le.com,DIRECT
+- DOMAIN-SUFFIX,lecloud.com,DIRECT
+- DOMAIN-SUFFIX,lemicp.com,DIRECT
+- DOMAIN-SUFFIX,licdn.com,DIRECT
+- DOMAIN-SUFFIX,luoo.net,DIRECT
+- DOMAIN-SUFFIX,meituan.com,DIRECT
+- DOMAIN-SUFFIX,meituan.net,DIRECT
+- DOMAIN-SUFFIX,mi.com,DIRECT
+- DOMAIN-SUFFIX,miaopai.com,DIRECT
+- DOMAIN-SUFFIX,microsoft.com,DIRECT
+- DOMAIN-SUFFIX,microsoftonline.com,DIRECT
+- DOMAIN-SUFFIX,miui.com,DIRECT
+- DOMAIN-SUFFIX,miwifi.com,DIRECT
+- DOMAIN-SUFFIX,mob.com,DIRECT
+- DOMAIN-SUFFIX,netease.com,DIRECT
+- DOMAIN-SUFFIX,office.com,DIRECT
+- DOMAIN-SUFFIX,office365.com,DIRECT
+- DOMAIN-KEYWORD,officecdn,DIRECT
+- DOMAIN-SUFFIX,oschina.net,DIRECT
+- DOMAIN-SUFFIX,ppsimg.com,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,qcloud.com,DIRECT
+- DOMAIN-SUFFIX,qdaily.com,DIRECT
+- DOMAIN-SUFFIX,qdmm.com,DIRECT
+- DOMAIN-SUFFIX,qhimg.com,DIRECT
+- DOMAIN-SUFFIX,qhres.com,DIRECT
+- DOMAIN-SUFFIX,qidian.com,DIRECT
+- DOMAIN-SUFFIX,qihucdn.com,DIRECT
+- DOMAIN-SUFFIX,qiniu.com,DIRECT
+- DOMAIN-SUFFIX,qiniucdn.com,DIRECT
+- DOMAIN-SUFFIX,qiyipic.com,DIRECT
+- DOMAIN-SUFFIX,qq.com,DIRECT
+- DOMAIN-SUFFIX,qqurl.com,DIRECT
+- DOMAIN-SUFFIX,rarbg.to,DIRECT
+- DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+- DOMAIN-SUFFIX,segmentfault.com,DIRECT
+- DOMAIN-SUFFIX,sinaapp.com,DIRECT
+- DOMAIN-SUFFIX,smzdm.com,DIRECT
+- DOMAIN-SUFFIX,snapdrop.net,DIRECT
+- DOMAIN-SUFFIX,sogou.com,DIRECT
+- DOMAIN-SUFFIX,sogoucdn.com,DIRECT
+- DOMAIN-SUFFIX,sohu.com,DIRECT
+- DOMAIN-SUFFIX,soku.com,DIRECT
+- DOMAIN-SUFFIX,speedtest.net,DIRECT
+- DOMAIN-SUFFIX,sspai.com,DIRECT
+- DOMAIN-SUFFIX,suning.com,DIRECT
+- DOMAIN-SUFFIX,taobao.com,DIRECT
+- DOMAIN-SUFFIX,tencent.com,DIRECT
+- DOMAIN-SUFFIX,tenpay.com,DIRECT
+- DOMAIN-SUFFIX,tianyancha.com,DIRECT
+- DOMAIN-SUFFIX,tmall.com,DIRECT
+- DOMAIN-SUFFIX,tudou.com,DIRECT
+- DOMAIN-SUFFIX,umetrip.com,DIRECT
+- DOMAIN-SUFFIX,upaiyun.com,DIRECT
+- DOMAIN-SUFFIX,upyun.com,DIRECT
+- DOMAIN-SUFFIX,veryzhun.com,DIRECT
+- DOMAIN-SUFFIX,weather.com,DIRECT
+- DOMAIN-SUFFIX,weibo.com,DIRECT
+- DOMAIN-SUFFIX,xiami.com,DIRECT
+- DOMAIN-SUFFIX,xiami.net,DIRECT
+- DOMAIN-SUFFIX,xiaomicp.com,DIRECT
+- DOMAIN-SUFFIX,ximalaya.com,DIRECT
+- DOMAIN-SUFFIX,xmcdn.com,DIRECT
+- DOMAIN-SUFFIX,xunlei.com,DIRECT
+- DOMAIN-SUFFIX,yhd.com,DIRECT
+- DOMAIN-SUFFIX,yihaodianimg.com,DIRECT
+- DOMAIN-SUFFIX,yinxiang.com,DIRECT
+- DOMAIN-SUFFIX,ykimg.com,DIRECT
+- DOMAIN-SUFFIX,youdao.com,DIRECT
+- DOMAIN-SUFFIX,youku.com,DIRECT
+- DOMAIN-SUFFIX,zealer.com,DIRECT
+- DOMAIN-SUFFIX,zhihu.com,DIRECT
+- DOMAIN-SUFFIX,zhimg.com,DIRECT
+- DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+- DOMAIN-SUFFIX,zoho.com,DIRECT
+- DOMAIN-KEYWORD,amazon,HK-BEUP® ISP
+- DOMAIN-KEYWORD,google,HK-BEUP® ISP
+- DOMAIN-KEYWORD,gmail,HK-BEUP® ISP
+- DOMAIN-KEYWORD,youtube,HK-BEUP® ISP
+- DOMAIN-KEYWORD,facebook,HK-BEUP® ISP
+- DOMAIN-SUFFIX,fb.me,HK-BEUP® ISP
+- DOMAIN-SUFFIX,fbcdn.net,HK-BEUP® ISP
+- DOMAIN-KEYWORD,twitter,HK-BEUP® ISP
+- DOMAIN-KEYWORD,instagram,HK-BEUP® ISP
+- DOMAIN-KEYWORD,dropbox,HK-BEUP® ISP
+- DOMAIN-SUFFIX,twimg.com,HK-BEUP® ISP
+- DOMAIN-KEYWORD,blogspot,HK-BEUP® ISP
+- DOMAIN-SUFFIX,youtu.be,HK-BEUP® ISP
+- DOMAIN-KEYWORD,whatsapp,HK-BEUP® ISP
+- DOMAIN-KEYWORD,admarvel,REJECT
+- DOMAIN-KEYWORD,admaster,REJECT
+- DOMAIN-KEYWORD,adsage,REJECT
+- DOMAIN-KEYWORD,adsmogo,REJECT
+- DOMAIN-KEYWORD,adsrvmedia,REJECT
+- DOMAIN-KEYWORD,adwords,REJECT
+- DOMAIN-KEYWORD,adservice,REJECT
+- DOMAIN-SUFFIX,appsflyer.com,REJECT
+- DOMAIN-KEYWORD,domob,REJECT
+- DOMAIN-SUFFIX,doubleclick.net,REJECT
+- DOMAIN-KEYWORD,duomeng,REJECT
+- DOMAIN-KEYWORD,dwtrack,REJECT
+- DOMAIN-KEYWORD,guanggao,REJECT
+- DOMAIN-KEYWORD,lianmeng,REJECT
+- DOMAIN-SUFFIX,mmstat.com,REJECT
+- DOMAIN-KEYWORD,mopub,REJECT
+- DOMAIN-KEYWORD,omgmta,REJECT
+- DOMAIN-KEYWORD,openx,REJECT
+- DOMAIN-KEYWORD,partnerad,REJECT
+- DOMAIN-KEYWORD,pingfore,REJECT
+- DOMAIN-KEYWORD,supersonicads,REJECT
+- DOMAIN-KEYWORD,uedas,REJECT
+- DOMAIN-KEYWORD,umeng,REJECT
+- DOMAIN-KEYWORD,usage,REJECT
+- DOMAIN-SUFFIX,vungle.com,REJECT
+- DOMAIN-KEYWORD,wlmonitor,REJECT
+- DOMAIN-KEYWORD,zjtoolbar,REJECT
+- DOMAIN-SUFFIX,9to5mac.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,abpchina.org,HK-BEUP® ISP
+- DOMAIN-SUFFIX,adblockplus.org,HK-BEUP® ISP
+- DOMAIN-SUFFIX,adobe.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,akamaized.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,alfredapp.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,amplitude.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,ampproject.org,HK-BEUP® ISP
+- DOMAIN-SUFFIX,android.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,angularjs.org,HK-BEUP® ISP
+- DOMAIN-SUFFIX,aolcdn.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,apkpure.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,appledaily.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,appshopper.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,appspot.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,arcgis.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,archive.org,HK-BEUP® ISP
+- DOMAIN-SUFFIX,armorgames.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,aspnetcdn.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,att.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,awsstatic.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,azureedge.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,azurewebsites.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,bing.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,bintray.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,bit.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,bit.ly,HK-BEUP® ISP
+- DOMAIN-SUFFIX,bitbucket.org,HK-BEUP® ISP
+- DOMAIN-SUFFIX,bjango.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,bkrtx.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,blog.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,blogcdn.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,blogger.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,blogsmithmedia.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,blogspot.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,blogspot.hk,HK-BEUP® ISP
+- DOMAIN-SUFFIX,bloomberg.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,box.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,box.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,cachefly.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,chromium.org,HK-BEUP® ISP
+- DOMAIN-SUFFIX,cl.ly,HK-BEUP® ISP
+- DOMAIN-SUFFIX,cloudflare.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,cloudfront.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,cloudmagic.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,cmail19.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,cnet.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,cocoapods.org,HK-BEUP® ISP
+- DOMAIN-SUFFIX,comodoca.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,crashlytics.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,culturedcode.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,d.pr,HK-BEUP® ISP
+- DOMAIN-SUFFIX,danilo.to,HK-BEUP® ISP
+- DOMAIN-SUFFIX,dayone.me,HK-BEUP® ISP
+- DOMAIN-SUFFIX,db.tt,HK-BEUP® ISP
+- DOMAIN-SUFFIX,deskconnect.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,disq.us,HK-BEUP® ISP
+- DOMAIN-SUFFIX,disqus.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,disquscdn.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,dnsimple.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,docker.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,dribbble.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,droplr.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,duckduckgo.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,dueapp.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,dytt8.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,edgecastcdn.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,edgekey.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,edgesuite.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,engadget.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,entrust.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,eurekavpt.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,evernote.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,fabric.io,HK-BEUP® ISP
+- DOMAIN-SUFFIX,fast.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,fastly.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,fc2.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,feedburner.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,feedly.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,feedsportal.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,fiftythree.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,firebaseio.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,flexibits.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,flickr.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,flipboard.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,g.co,HK-BEUP® ISP
+- DOMAIN-SUFFIX,gabia.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,geni.us,HK-BEUP® ISP
+- DOMAIN-SUFFIX,gfx.ms,HK-BEUP® ISP
+- DOMAIN-SUFFIX,ggpht.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,ghostnoteapp.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,git.io,HK-BEUP® ISP
+- DOMAIN-KEYWORD,github,HK-BEUP® ISP
+- DOMAIN-SUFFIX,globalsign.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,gmodules.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,godaddy.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,golang.org,HK-BEUP® ISP
+- DOMAIN-SUFFIX,gongm.in,HK-BEUP® ISP
+- DOMAIN-SUFFIX,goo.gl,HK-BEUP® ISP
+- DOMAIN-SUFFIX,goodreaders.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,goodreads.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,gravatar.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,gstatic.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,gvt0.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,hockeyapp.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,hotmail.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,icons8.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,ifixit.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,ift.tt,HK-BEUP® ISP
+- DOMAIN-SUFFIX,ifttt.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,iherb.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,imageshack.us,HK-BEUP® ISP
+- DOMAIN-SUFFIX,img.ly,HK-BEUP® ISP
+- DOMAIN-SUFFIX,imgur.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,imore.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,instapaper.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,ipn.li,HK-BEUP® ISP
+- DOMAIN-SUFFIX,is.gd,HK-BEUP® ISP
+- DOMAIN-SUFFIX,issuu.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,itgonglun.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,itun.es,HK-BEUP® ISP
+- DOMAIN-SUFFIX,ixquick.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,j.mp,HK-BEUP® ISP
+- DOMAIN-SUFFIX,js.revsci.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,jshint.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,jtvnw.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,justgetflux.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,kat.cr,HK-BEUP® ISP
+- DOMAIN-SUFFIX,klip.me,HK-BEUP® ISP
+- DOMAIN-SUFFIX,libsyn.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,linkedin.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,line-apps.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,linode.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,lithium.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,littlehj.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,live.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,live.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,livefilestore.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,llnwd.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,macid.co,HK-BEUP® ISP
+- DOMAIN-SUFFIX,macromedia.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,macrumors.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,mashable.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,mathjax.org,HK-BEUP® ISP
+- DOMAIN-SUFFIX,medium.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,mega.co.nz,HK-BEUP® ISP
+- DOMAIN-SUFFIX,mega.nz,HK-BEUP® ISP
+- DOMAIN-SUFFIX,megaupload.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,microsofttranslator.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,mindnode.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,mobile01.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,modmyi.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,msedge.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,myfontastic.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,name.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,nextmedia.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,nsstatic.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,nssurge.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,nyt.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,nytimes.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,omnigroup.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,onedrive.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,onenote.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,ooyala.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,openvpn.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,openwrt.org,HK-BEUP® ISP
+- DOMAIN-SUFFIX,orkut.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,osxdaily.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,outlook.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,ow.ly,HK-BEUP® ISP
+- DOMAIN-SUFFIX,paddleapi.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,parallels.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,parse.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,pdfexpert.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,periscope.tv,HK-BEUP® ISP
+- DOMAIN-SUFFIX,pinboard.in,HK-BEUP® ISP
+- DOMAIN-SUFFIX,pinterest.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,pixelmator.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,pixiv.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,playpcesor.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,playstation.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,playstation.com.hk,HK-BEUP® ISP
+- DOMAIN-SUFFIX,playstation.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,playstationnetwork.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,pushwoosh.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,rime.im,HK-BEUP® ISP
+- DOMAIN-SUFFIX,servebom.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,sfx.ms,HK-BEUP® ISP
+- DOMAIN-SUFFIX,shadowsocks.org,HK-BEUP® ISP
+- DOMAIN-SUFFIX,sharethis.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,shazam.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,skype.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,smartdnsHK-BEUP® ISP.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,smartmailcloud.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,sndcdn.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,sony.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,soundcloud.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,sourceforge.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,spotify.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,squarespace.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,sstatic.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,st.luluku.pw,HK-BEUP® ISP
+- DOMAIN-SUFFIX,stackoverflow.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,startpage.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,staticflickr.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,steamcommunity.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,symauth.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,symcb.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,symcd.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,tapbots.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,tapbots.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,tdesktop.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,techcrunch.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,techsmith.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,thepiratebay.org,HK-BEUP® ISP
+- DOMAIN-SUFFIX,theverge.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,time.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,timeinc.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,tiny.cc,HK-BEUP® ISP
+- DOMAIN-SUFFIX,tinypic.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,tmblr.co,HK-BEUP® ISP
+- DOMAIN-SUFFIX,todoist.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,trello.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,trustasiassl.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,tumblr.co,HK-BEUP® ISP
+- DOMAIN-SUFFIX,tumblr.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,tweetdeck.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,tweetmarker.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,twitch.tv,HK-BEUP® ISP
+- DOMAIN-SUFFIX,txmblr.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,typekit.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,ubertags.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,ublock.org,HK-BEUP® ISP
+- DOMAIN-SUFFIX,ubnt.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,ulyssesapp.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,urchin.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,usertrust.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,v.gd,HK-BEUP® ISP
+- DOMAIN-SUFFIX,v2ex.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,vimeo.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,vimeocdn.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,vine.co,HK-BEUP® ISP
+- DOMAIN-SUFFIX,vivaldi.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,vox-cdn.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,vsco.co,HK-BEUP® ISP
+- DOMAIN-SUFFIX,vultr.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,w.org,HK-BEUP® ISP
+- DOMAIN-SUFFIX,w3schools.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,webtype.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,wikiwand.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,wikileaks.org,HK-BEUP® ISP
+- DOMAIN-SUFFIX,wikimedia.org,HK-BEUP® ISP
+- DOMAIN-SUFFIX,wikipedia.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,wikipedia.org,HK-BEUP® ISP
+- DOMAIN-SUFFIX,windows.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,windows.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,wire.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,wordpress.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,workflowy.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,wp.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,wsj.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,wsj.net,HK-BEUP® ISP
+- DOMAIN-SUFFIX,xda-developers.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,xeeno.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,xiti.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,yahoo.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,yimg.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,ying.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,yoyo.org,HK-BEUP® ISP
+- DOMAIN-SUFFIX,ytimg.com,HK-BEUP® ISP
+- DOMAIN-SUFFIX,telegra.ph,HK-BEUP® ISP
+- DOMAIN-SUFFIX,telegram.org,HK-BEUP® ISP
+- IP-CIDR,91.108.4.0/22,HK-BEUP® ISP,no-resolve
+- IP-CIDR,91.108.8.0/21,HK-BEUP® ISP,no-resolve
+- IP-CIDR,91.108.16.0/22,HK-BEUP® ISP,no-resolve
+- IP-CIDR,91.108.56.0/22,HK-BEUP® ISP,no-resolve
+- IP-CIDR,149.154.160.0/20,HK-BEUP® ISP,no-resolve
+- IP-CIDR6,2001:67c:4e8::/48,HK-BEUP® ISP,no-resolve
+- IP-CIDR6,2001:b28:f23d::/48,HK-BEUP® ISP,no-resolve
+- IP-CIDR6,2001:b28:f23f::/48,HK-BEUP® ISP,no-resolve
+- IP-CIDR,120.232.181.162/32,HK-BEUP® ISP,no-resolve
+- IP-CIDR,120.241.147.226/32,HK-BEUP® ISP,no-resolve
+- IP-CIDR,120.253.253.226/32,HK-BEUP® ISP,no-resolve
+- IP-CIDR,120.253.255.162/32,HK-BEUP® ISP,no-resolve
+- IP-CIDR,120.253.255.34/32,HK-BEUP® ISP,no-resolve
+- IP-CIDR,120.253.255.98/32,HK-BEUP® ISP,no-resolve
+- IP-CIDR,180.163.150.162/32,HK-BEUP® ISP,no-resolve
+- IP-CIDR,180.163.150.34/32,HK-BEUP® ISP,no-resolve
+- IP-CIDR,180.163.151.162/32,HK-BEUP® ISP,no-resolve
+- IP-CIDR,180.163.151.34/32,HK-BEUP® ISP,no-resolve
+- IP-CIDR,203.208.39.0/24,HK-BEUP® ISP,no-resolve
+- IP-CIDR,203.208.40.0/24,HK-BEUP® ISP,no-resolve
+- IP-CIDR,203.208.41.0/24,HK-BEUP® ISP,no-resolve
+- IP-CIDR,203.208.43.0/24,HK-BEUP® ISP,no-resolve
+- IP-CIDR,203.208.50.0/24,HK-BEUP® ISP,no-resolve
+- IP-CIDR,220.181.174.162/32,HK-BEUP® ISP,no-resolve
+- IP-CIDR,220.181.174.226/32,HK-BEUP® ISP,no-resolve
+- IP-CIDR,220.181.174.34/32,HK-BEUP® ISP,no-resolve
+- DOMAIN,injections.adguard.org,DIRECT
+- DOMAIN,local.adguard.org,DIRECT
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,17.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+- IP-CIDR,224.0.0.0/4,DIRECT
+- IP-CIDR6,fe80::/10,DIRECT
+- DOMAIN-SUFFIX,cn,DIRECT
+- DOMAIN-KEYWORD,-cn,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,HK-BEUP® ISP

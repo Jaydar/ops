@@ -1,0 +1,82 @@
+name: ops
+
+# 手动创建网络
+# docker network create --driver bridge --subnet 192.168.0.0/24 base
+
+x-tz: &tz Asia/Shanghai
+x-username: &username root
+x-userpass: &userpass Jaydar.123
+
+services:
+  redis:
+    image: redis:latest
+    hostname: redis
+    restart: always
+    ports:
+      - 6379:6379
+    volumes:
+      - redis:/data
+    environment:
+      TZ: *tz
+    command: ["redis-server", "--requirepass", *userpass]
+    networks:
+      - ops
+
+  mongo:
+    image: mongo:latest
+    hostname: mongo
+    restart: always
+    environment:
+      TZ: *tz
+      MONGO_INITDB_DATABASE: admin
+      MONGO_INITDB_ROOT_USERNAME: *username
+      MONGO_INITDB_ROOT_PASSWORD: *userpass
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo_db:/data/db
+      - mongo_configdb:/data/configdb
+    networks:
+      - ops
+
+  pgsql:
+    container_name: pgsql
+    hostname: pgsql
+    image: postgres:latest
+    restart: always
+    ports:
+      - 5432:5432
+    volumes:
+      - pgsql:/var/lib/postgresql/data/MAJOR/docker
+    environment:
+      POSTGRES_USER: *username
+      POSTGRES_PASSWORD: *userpass
+    networks:
+      - ops
+
+  mysql:
+    container_name: mysql
+    hostname: mysql
+    image: mysql:latest
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: *userpass
+      TZ: *tz
+    networks:
+      - ops
+
+volumes:
+  redis:
+  mongo_db:
+  mongo_configdb:
+  pgsql:
+  mysql:
+
+networks:
+  ops:
+    driver: bridge
+    external: false

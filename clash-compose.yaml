@@ -1,0 +1,33 @@
+name: ops
+
+services:
+      
+  clash-core:
+    image: metacubex/mihomo
+    container_name: clash
+    hostname: clash
+    restart: always
+    ports:
+      - 7890:7890
+      - 9090:9090
+    volumes:
+       - ./clash:/root/.config/mihomo
+    networks:
+      - ops
+
+  clash-web:
+    image: ghcr.io/zephyruso/zashboard:latest
+    container_name: yacd
+    hostname: yacd
+    restart: always
+    ports:
+      - 9080:80
+    networks:
+      - ops
+
+
+
+networks:
+  ops:
+    driver: bridge
+    external: false
